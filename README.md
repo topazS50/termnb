@@ -1,9 +1,13 @@
 # termnb
 ##Tool to open/execute ipython notebook from terminal
-Install:
-
-put nby.py under PYTHONPATH and nbt under PATH
-
 Usage:
 
-$ nbt ./mynote.ipynb
+just simply run with python
+
+$ python ./nby.py yournotebook.ipynb
+
+or 
+
+put nby.py under PYTHONPATH and nbt under PATH. then,
+
+$ nbt yournotebook.ipynb
