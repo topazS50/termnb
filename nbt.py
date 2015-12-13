@@ -16,8 +16,9 @@ HEAD_EXEC = '=====Out=======' + LENGTH_BARS * '='
 TAIL_EXEC = '---------------' + LENGTH_BARS * '-'
 HEAD_EXCEPTION = '=====Exception=' + LENGTH_BARS * '='
 TAIL_EXCEPTION = '-----Exception-' + LENGTH_BARS * '-'
-EDITOR = 'pyvim'
-FILETMP = '__tmp.py'
+EDITOR = 'vim'
+FILETMP = '__nbt_tmp_edit.py'
+FILEBKP = '__nbt_bkp.ipynb'
 
 
 count_ = itertools.count()
@@ -221,6 +222,7 @@ def main():
         quit()
 
     filename = str(sys.argv[1])
+    subprocess.check_call( 'cp ' + filename + ' ' + FILEBKP, shell=True)
     ipynb = load_ipynb(filename)
     cells = ipynb['cells']
 

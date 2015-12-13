@@ -11,3 +11,6 @@ or
 put nby.py under PYTHONPATH and nbt under PATH. then,
 
 $ nbt yournotebook.ipynb
+
+### Comments, Todo
+Outputs are note updated:
